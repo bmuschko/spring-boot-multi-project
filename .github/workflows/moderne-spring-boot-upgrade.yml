@@ -44,5 +44,8 @@ jobs:
       - name: Apply recipe changes
         run: mod git apply . --last-recipe-run
 
+      - name: Rebuild LSTs
+        run: mod build . --no-download
+
       - name: Verify changes with build tool
         run: mod exec . --last-recipe-run -- $MODERNE_BUILD_TOOL_CHECK
