@@ -1,7 +1,7 @@
 name: Spring Boot 3.5 Upgrade
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   upgrade:
