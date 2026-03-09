@@ -1,0 +1,98 @@
+build:
+  partitions:
+    - name: domain
+      steps:
+        - type: gradle
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            domain/**
+        - type: resource
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            domain/**
+    - name: api
+      steps:
+        - type: gradle
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            api/**
+            domain/**
+        - type: resource
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            api/**
+            domain/**
+    - name: persistence
+      steps:
+        - type: gradle
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            persistence/**
+            domain/**
+        - type: resource
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            persistence/**
+            domain/**
+    - name: service
+      steps:
+        - type: gradle
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            service/**
+            persistence/**
+            domain/**
+        - type: resource
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            service/**
+            persistence/**
+            domain/**
+    - name: web
+      steps:
+        - type: gradle
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            web/**
+            api/**
+            service/**
+            persistence/**
+            domain/**
+        - type: resource
+          inclusion: |-
+            build.gradle
+            settings.gradle
+            gradle.properties
+            gradle/**
+            web/**
+            api/**
+            service/**
+            persistence/**
+            domain/**
