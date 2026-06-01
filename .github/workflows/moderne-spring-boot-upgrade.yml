@@ -4,8 +4,8 @@ on:
   push:
 
 env:
-  MODERNE_CLI_VERSION: "4.1.8"
-  REWRITE_SPRING_VERSION: "0.31.0"
+  MODERNE_CLI_VERSION: "4.2.10"
+  REWRITE_SPRING_VERSION: "0.32.3"
 
 jobs:
   upgrade:
